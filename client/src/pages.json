@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationBarTitleText": "用心语 - 分享你现在的想法",
+        "app-plus":{
+          "titleNView":false
+        }
+      }
+    }
+  ],
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

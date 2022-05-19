@@ -26,7 +26,7 @@ def sdk_send_sms(tel, code):
     """
     # 使用腾讯SDK发送验证码
     try:
-        cred = credential.Credential("AKIDc2OUfbqgp7JxS4qx3va6pgR4Siz4hA3H", "IhLqIYgmna8R4Sfm12qrkct0qiNvdifu")
+        cred = credential.Credential("", "")
 
         # 非必要步骤:
         # 实例化一个客户端配置对象，可以指定超时时间等配置
@@ -37,9 +37,9 @@ def sdk_send_sms(tel, code):
         client = sms_client.SmsClient(cred, "ap-guangzhou", clientProfile)
         req = models.SendSmsRequest()
 
-        req.SmsSdkAppId = "1400664121"
-        req.SignName = "学习日志个人网"
-        req.TemplateId = "1395969"
+        req.SmsSdkAppId = ""
+        req.SignName = ""
+        req.TemplateId = ""
         req.TemplateParamSet = [str(code)]
         req.PhoneNumberSet = ["+86" + tel]
 
